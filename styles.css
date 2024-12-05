@@ -26,6 +26,10 @@ p {
     margin: 1rem 0;
 }
 
+.headerP {
+    color: white;
+}
+
 /* Header Section */
 .header-container {
     display: flex;
@@ -41,6 +45,42 @@ p {
     width: 150px;
     height: 150px;
     margin-right: 1.5rem;
+}
+
+.stickpic {
+    display: flex;
+    flex-direction: row;
+    /* Arrange images in a row */
+    justify-content: center;
+    /* Center the images horizontally */
+    align-items: center;
+    /* Align the images vertically */
+    gap: 1rem;
+    /* Add space between images */
+    margin-top: 1rem;
+    /* Add some space above the image row */
+}
+
+.stickpic img {
+    max-width: 20%;
+    /* Ensure images take up equal width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow for style */
+}
+
+section {
+    max-width: 1200px;
+    /* Ensure section width stays manageable */
+    margin: 0 auto;
+    /* Center the section within the page */
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
@@ -225,4 +265,27 @@ footer {
         font-size: 0.9rem;
         margin: 0 0.5rem;
     }
+}
+
+
+
+
+.image-container {
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically (if needed) */
+    margin-top: 1.5rem;
+    /* Optional: Add space between the list and the image */
+}
+
+.image-container img {
+    max-width: 100%;
+    /* Ensures the image doesn't overflow */
+    height: auto;
+    /* Maintains the image's aspect ratio */
+    max-height: 1000px;
+    /* Optional: Set a max height for better visuals */
 }
