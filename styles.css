@@ -62,14 +62,14 @@ p {
 }
 
 .stickpic img {
+    height: 300px;
+    /* Unified height */
+    width: auto;
     max-width: 20%;
-    /* Ensure images take up equal width */
-    height: auto;
-    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensures image fills the area nicely */
     border-radius: 10px;
-    /* Optional: Add rounded corners */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* Optional: Add a shadow for style */
 }
 
 section {
@@ -288,4 +288,21 @@ footer {
     /* Maintains the image's aspect ratio */
     max-height: 1000px;
     /* Optional: Set a max height for better visuals */
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 70%;
+    /* Try 50% to 70% depending on preference */
+    aspect-ratio: 16 / 9;
+    /* Maintains 16:9 ratio */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
